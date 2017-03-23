@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
+
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<title>FWOSH</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,80 +17,76 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css"> 
-	<script src="js/main.js"></script>
 </head>
 
 <body>
-	<div class="full-container">
-		<!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Fwosh</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#a">About</a></li>
-            <li><a href="#work">Contact</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+	<div id="page">
+
+	<!--navigation-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Fwosh</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#work">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
 
 
-		<div class="parallax-offset">
-			<div class="parallax_layer parallax_layer_0">
-				<img src="images/1.png">
+		<!--<div class="keyart" id="nonparallax">
+		</div>-->
+		<div class="keyart" id="parallax">
+			<div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>		<!-- 00.0 -->
+			<div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>	<!-- 12.5 -->
+			<div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>		<!-- 25.0 -->
+			<div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>	<!-- 37.5 -->
+			<div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>		<!-- 50.0 -->
+			<div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>	<!-- 62.5 -->
+			<div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>		<!-- 75.0 -->
+			<div class="keyart_layer" id="keyart-scrim"></div>
+			<div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>		<!-- 87.5 -->
+			<div class="keyart_layer" id="keyart-8" data-speed="100"></div>		<!-- 100. -->
+		</div>
+
+		<div id="maincontain">
+		<div id="main">
+
+			<div class="section pressquote big first" id="about">
+				<h2>BLAH</h2>
+				<h3>about</h3>Here's more content about myself and shit like that. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis at neque in congue. Vestibulum iaculis tellus nec nulla elementum, at vestibulum ipsum posuere. In eleifend augue elementum neque maximus, non dictum nulla fermentum. Donec lobortis scelerisque consectetur. Donec enim nisi, varius quis ligula eu, dignissim sagittis orci. Donec vehicula molestie facilisis. Ut id magna libero. Nunc nec enim vulputate, tempus enim eget, auctor enim. Nulla maximus tincidunt feugiat. Nunc ultricies fringilla elit facilisis volutpat. Suspendisse blandit vulputate lorem, sit amet feugiat enim dapibus vitae. Ut laoreet tellus at risus facilisis convallis. Sed pellentesque faucibus condimentum. Nunc dolor eros, posuere nec sollicitudin et, posuere nec justo. Morbi scelerisque rutrum mi, a varius nulla tincidunt vitae.
+				<br>
+				Here's more content about myself and shit like that. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis at neque in congue. Vestibulum iaculis tellus nec nulla elementum, at vestibulum ipsum posuere. In eleifend augue elementum neque maximus, non dictum nulla fermentum. Donec lobortis scelerisque consectetur. Donec enim nisi, varius quis ligula eu, dignissim sagittis orci. Donec vehicula molestie facilisis. Ut id magna libero. Nunc nec enim vulputate, tempus enim eget, auctor enim. Nulla maximus tincidunt feugiat. Nunc ultricies fringilla elit facilisis volutpat. Suspendisse blandit vulputate lorem, sit amet feugiat enim dapibus vitae. Ut laoreet tellus at risus facilisis convallis. Sed pellentesque faucibus condimentum. Nunc dolor eros, posuere nec sollicitudin et, posuere nec justo. Morbi scelerisque rutrum mi, a varius nulla tincidunt vitae.
+				Here's more content about myself and shit like that. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis at neque in congue. Vestibulum iaculis tellus nec nulla elementum, at vestibulum ipsum posuere. In eleifend augue elementum neque maximus, non dictum nulla fermentum. Donec lobortis scelerisque consectetur. Donec enim nisi, varius quis ligula eu, dignissim sagittis orci. Donec vehicula molestie facilisis. Ut id magna libero. Nunc nec enim vulputate, tempus enim eget, auctor enim. Nulla maximus tincidunt feugiat. Nunc ultricies fringilla elit facilisis volutpat. Suspendisse blandit vulputate lorem, sit amet feugiat enim dapibus vitae. Ut laoreet tellus at risus facilisis convallis. Sed pellentesque faucibus condimentum. Nunc dolor eros, posuere nec sollicitudin et, posuere nec justo. Morbi scelerisque rutrum mi, a varius nulla tincidunt vitae.
+				<br>
+				Here's more content about myself and shit like that. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis at neque in congue. Vestibulum iaculis tellus nec nulla elementum, at vestibulum ipsum posuere. In eleifend augue elementum neque maximus, non dictum nulla fermentum. Donec lobortis scelerisque consectetur. Donec enim nisi, varius quis ligula eu, dignissim sagittis orci. Donec vehicula molestie facilisis. Ut id magna libero. Nunc nec enim vulputate, tempus enim eget, auctor enim. Nulla maximus tincidunt feugiat. Nunc ultricies fringilla elit facilisis volutpat. Suspendisse blandit vulputate lorem, sit amet feugiat enim dapibus vitae. Ut laoreet tellus at risus facilisis convallis. Sed pellentesque faucibus condimentum. Nunc dolor eros, posuere nec sollicitudin et, posuere nec justo. Morbi scelerisque rutrum mi, a varius nulla tincidunt vitae.
 			</div>
-			<div class="parallax_layer parallax_layer_1">
-				<img src="images/2.png">
-			</div>
-			<div class="parallax_layer parallax_layer_2">
-				<img src="images/3.png">
-			</div>
-			<div class="parallax_layer parallax_layer_3">
-				<img src="images/4.png">
-			</div>
-			<div class="parallax_layer parallax_layer_4">
-				<img src="images/5.png">
-			</div>
-			<div class="parallax_layer parallax_layer_5">
-				<img src="images/6.png">
-			</div>
-			<div class="parallax_layer parallax_layer_6">
-				<img src="images/7.png">
-			</div>
-			<div class="parallax-cover">
-			<div class="content">
-					<section id="a"><h1>I'm a web developer and illustrator based in San Francisco.</h1>
-					<p>
-						Here's more content about myself and shit like that. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis at neque in congue. Vestibulum iaculis tellus nec nulla elementum, at vestibulum ipsum posuere. In eleifend augue elementum neque maximus, non dictum nulla fermentum. Donec lobortis scelerisque consectetur. Donec enim nisi, varius quis ligula eu, dignissim sagittis orci. Donec vehicula molestie facilisis. Ut id magna libero. Nunc nec enim vulputate, tempus enim eget, auctor enim. Nulla maximus tincidunt feugiat. Nunc ultricies fringilla elit facilisis volutpat. Suspendisse blandit vulputate lorem, sit amet feugiat enim dapibus vitae. Ut laoreet tellus at risus facilisis convallis. Sed pellentesque faucibus condimentum. Nunc dolor eros, posuere nec sollicitudin et, posuere nec justo. Morbi scelerisque rutrum mi, a varius nulla tincidunt vitae.
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis at neque in congue. Vestibulum iaculis tellus nec nulla elementum, at vestibulum ipsum posuere. In eleifend augue elementum neque maximus, non dictum nulla fermentum. Donec lobortis scelerisque consectetur. Donec enim nisi, varius quis ligula eu, dignissim sagittis orci. Donec vehicula molestie facilisis. Ut id magna libero. Nunc nec enim vulputate, tempus enim eget, auctor enim. Nulla maximus tincidunt feugiat. Nunc ultricies fringilla elit facilisis volutpat. Suspendisse blandit vulputate lorem, sit amet feugiat enim dapibus vitae. Ut laoreet tellus at risus facilisis convallis. Sed pellentesque faucibus condimentum. Nunc dolor eros, posuere nec sollicitudin et, posuere nec justo. Morbi scelerisque rutrum mi, a varius nulla tincidunt vitae.
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis at neque in congue. Vestibulum iaculis tellus nec nulla elementum, at vestibulum ipsum posuere. In eleifend augue elementum neque maximus, non dictum nulla fermentum. Donec lobortis scelerisque consectetur. Donec enim nisi, varius quis ligula eu, dignissim sagittis orci. Donec vehicula molestie facilisis. Ut id magna libero. Nunc nec enim vulputate, tempus enim eget, auctor enim. Nulla maximus tincidunt feugiat. Nunc ultricies fringilla elit facilisis volutpat. Suspendisse blandit vulputate lorem, sit amet feugiat enim dapibus vitae. Ut laoreet tellus at risus facilisis convallis. Sed pellentesque faucibus condimentum. Nunc dolor eros, posuere nec sollicitudin et, posuere nec justo. Morbi scelerisque rutrum mi, a varius nulla tincidunt vitae.
-					</section>
-							<section id="work">
-								<h1>WORK</h1>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis at neque in congue. Vestibulum iaculis tellus nec nulla elementum, at vestibulum ipsum posuere. In eleifend augue elementum neque maximus, non dictum nulla fermentum. Donec lobortis scelerisque consectetur. Donec enim nisi, varius quis ligula eu, dignissim sagittis orci. Donec vehicula molestie facilisis. Ut id magna libero. Nunc nec enim vulputate, tempus enim eget, auctor enim. Nulla maximus tincidunt feugiat. Nunc ultricies fringilla elit facilisis volutpat. Suspendisse blandit vulputate lorem, sit amet feugiat enim dapibus vitae. Ut laoreet tellus at risus facilisis convallis. Sed pellentesque faucibus condimentum. Nunc dolor eros, posuere nec sollicitudin et, posuere nec justo. Morbi scelerisque rutrum mi, a varius nulla tincidunt vitae.</section>
 
 
 
-							</div>
-						</div>
-</div>
 
+		</div></div>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.simplr.smoothscroll.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

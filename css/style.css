@@ -1,115 +1,181 @@
-* {
-  box-sizing: border-box; }
+html {
+	background-color: #210002;
+	color: #ffaf00;
+}
 
-html,
 body {
-  background-color: #FEDCC8;
-  font-color: #fff;
-  color: white;
-  height: auto;
-  min-height: 100%; }
+	position: relative;
+}
 
-div {
-  margin: 0;
-  padding: 0;
-  border: 0; }
+/* PARALLAX */
 
-h1 {
-  color: white;
-  text-align: center;
-  font-size: 24px; }
+.keyart, .keyart_layer {
+	height: 1000px;
+}
 
-.full-container {
-  height: 100%; }
+#parallax {
+	display: none;
+}
 
-.parallax_layer {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-  .parallax_layer img {
-    display: block;
-    position: absolute;
-    margin-left: -1500px;
-    bottom: 0;
-    left: 50%; }
+#nonparallax {
+	display: block;
+}
 
-.background {
-  background: #2D112B;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  margin: 0px;
-  height: 2000px;
-  z-index: 2; }
+#nonparallax {
+	background-image: url('../images/keyart-mobile.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
 
-.parallax-offset {
-  perspective: 100px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0; }
+.keyart {
+	position: relative;
+	z-index: 10;
+}
 
-.parallax-cover {
-  background: #2D112B;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  height: 2000px;
-  z-index: 2; }
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+.keyart_layer.parallax {
+	position: fixed;
+}
+		#keyart-0 {
+		background-image: url('../images/test9.png');
+		background-color: #ffaf1b;
+	}
+	#keyart-1 {
+		background-image: url('images/test8.png');
+	}
+	#keyart-2 {
+		background-image: url('../images/test7.png');
+	}
+	#keyart-3 {
+		background-image: url('../images/test6.png');
+	}
+	#keyart-4 {
+		background-image: url('../images/test5.png');
+	}
+	#keyart-5 {
+		background-image: url('../images/test4.png');
+	}
+	#keyart-6 {
+		background-image: url('../images/test3.png');
+	}
+	#keyart-7 {
+		background-image: url('../images/test2.png');
+	}
+	#keyart-8 {
+		background-image: url('../images/test1.png');
+	}
+	#keyart-scrim {
+		background-color: #ffaf00;
+		opacity: 0;
+	}
 
-.content {
-  position: relative;
-  margin: 0 auto;
-  z-index: 3;
-  text-align: justify;
-  width: 50%;
-  height: 300px;
-  display: block; }
+ 
+/********************/
+/********************/
+/* ENABLES PARALLAX */
+/********************/
+/********************/
 
-.about {
-  text-align: justify; }
+@media (min-width: 601px) {
 
-section {
-  min-height: 100%; }
+	#nonparallax {
+		display: none;
+	}
+	#parallax {
+		display: block;
+	}
 
-.main {
-  max-width: 900px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 99;
-  height: 2000px;
-  position: relative;
-  background-color: #210002; }
+}
 
-.parallax_layer_0 {
-  transform: translateZ(-300px) scale(4); }
+/* PARALLAX */
 
-.parallax_layer_1 {
-  transform: translateZ(-250px) scale(3.5); }
+	.keyart, .keyart_layer {
+		height: 650px;
+	}
 
-.parallax_layer_2 {
-  transform: translateZ(-200px) scale(3); }
+	.keyart_layer {
+		position: absolute;
+		background-size: auto 600px;
+	}
+}
 
-.parallax_layer_3 {
-  transform: translateZ(-150px) scale(2.5); }
 
-.parallax_layer_4 {
-  transform: translateZ(-100px) scale(2); }
+/* MAIN STRUCTURE */
 
-.parallax_layer_5 {
-  transform: translateZ(-50px) scale(1.5); }
+.toprule {
+	background-color: #a34300;
+	height: 37px;
+	position: absolute;
+	width: 100%;
+}
 
-.parallax_layer_6 {
-  transform: translateZ(0px) scale(1); }
+#maincontain {
+	background-color: #210002;
+	position: relative;
+	z-index: 98;
+}
 
-/*# sourceMappingURL=style.css.map */
+#main {
+	max-width: 900px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 99;
+	position: relative;
+	background-color: #210002;
+}
+
+
+/* PRESS QUOTE SECTIONS */
+
+.section.pressquote {
+	margin: 30px auto 60px;
+}
+	.section.pressquote.first {
+		margin-top: 0;
+	}
+.section.pressquote h2, .section.pressquote h3 {
+	line-height: 1.35em;
+	margin: 20px auto;
+}
+	.section.pressquote.first h2 {
+		margin-top: 0;
+	}
+
+
+/********************/
+/********************/
+/** RESPONSIVENESS **/
+/********************/
+/********************/
+
+
+@media (max-width: 880px) {
+	.section.support ul.supportlinks {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.section.support .supportlinks .link.techsupport a {
+		margin: 0 50px 0 0;
+	}
+	.section.support .supportlinks .link.streaming a {
+		margin: 0 0 0 50px;
+	}
+
+
+	.section.companylinks {
+		margin: 50px auto;
+		padding-right: 0;
+	}	
+
+}
+
+
