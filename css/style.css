@@ -7,6 +7,10 @@ body {
 	position: relative;
 }
 
+h2{
+	margin-top: 0px;
+}
+
 /* PARALLAX */
 
 .keyart, .keyart_layer {
@@ -136,19 +140,15 @@ body {
 
 /* PRESS QUOTE SECTIONS */
 
-.section.pressquote {
+.section {
 	margin: 30px auto 60px;
+	margin-top: 0;
+
 }
-	.section.pressquote.first {
-		margin-top: 0;
-	}
-.section.pressquote h2, .section.pressquote h3 {
+.section. h2, .section h3 {
 	line-height: 1.35em;
-	margin: 20px auto;
+	margin: 0 auto;
 }
-	.section.pressquote.first h2 {
-		margin-top: 0;
-	}
 
 
 /********************/
