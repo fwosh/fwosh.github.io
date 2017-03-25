@@ -7,7 +7,7 @@ body {
 	position: relative;
 }
 
-h2{
+h1 h2{
 	margin-top: 0px;
 }
 
@@ -137,8 +137,7 @@ h2{
 	background-color: #210002;
 }
 
-
-/* PRESS QUOTE SECTIONS */
+/*section*/
 
 .section {
 	margin: 30px auto 60px;
@@ -149,14 +148,6 @@ h2{
 	line-height: 1.35em;
 	margin: 0 auto;
 }
-
-
-/********************/
-/********************/
-/** RESPONSIVENESS **/
-/********************/
-/********************/
-
 
 @media (max-width: 880px) {
 	.section.support ul.supportlinks {
