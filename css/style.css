@@ -115,9 +115,6 @@ h2{
 	}
 }
 
-
-/* MAIN STRUCTURE */
-
 .toprule {
 	background-color: #a34300;
 	height: 37px;
@@ -132,7 +129,7 @@ h2{
 }
 
 #main {
-	max-width: 900px;
+	max-width: 1000px;
 	padding-left: 30px;
 	padding-right: 30px;
 	margin-left: auto;

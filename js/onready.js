@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+ $('.test-popup-link').magnificPopup({type:'image'});
+
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
