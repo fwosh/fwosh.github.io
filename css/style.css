@@ -11,6 +11,8 @@ body {
 
 h1{
 	margin-top: 0px;
+	font-size:20px;
+	padding-top:15px;
 }
 
 h2{
@@ -141,31 +143,14 @@ h2{
 .section {
 	margin: 30px auto 60px;
 	margin-top: 0;
+	text-align:center;
 
 }
 
-@media (max-width: 880px) {
-	.section.support ul.supportlinks {
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.section.support .supportlinks .link.techsupport a {
-		margin: 0 50px 0 0;
-	}
-	.section.support .supportlinks .link.streaming a {
-		margin: 0 0 0 50px;
-	}
-
-
-	.section.companylinks {
-		margin: 50px auto;
-		padding-right: 0;
-	}	
-
-}
 
 .about {
 	margin: 0 auto;
+	text-align:center;
 
 }
 
@@ -233,4 +218,16 @@ h2{
 .navbar-default .navbar-nav > .open > a:focus .caret {
     border-top-color: #555;
     border-bottom-color: #555;
+}
+
+.button {
+	background-color:white;
+	padding:5px;
+	width:50%;
+	text-align:center;
+	margin: 0 auto;
+}
+
+.button a {
+	text-decoration: none;
 }
