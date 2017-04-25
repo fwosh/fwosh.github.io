@@ -154,6 +154,56 @@ h2{
 
 }
 
+.brand{
+	margin: 0 auto;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  float: left;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   z-index: 1000;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+
+
+}
+
+.project:hover .overlay {
+  opacity: 0.9;
+}
+
+.row{
+	margin-bottom:20px;
+}
+
+.project-text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.project-container {
+	 border-radius: 20px;
+	 display:block;
+	 overflow:hidden;
+	 height: 100%;
+  	 width: 100%;
+  	 position:relative;
+}
+
 /*navbar CSS*/
 
 .navbar, .navbar-fixed-top, .navbar-default{
