@@ -58,7 +58,7 @@ h2{
 		background-color: #ffaf1b;
 	}
 	#keyart-1 {
-		background-image: url('images/test8.png');
+		background-image: url('../images/test8.png');
 	}
 	#keyart-2 {
 		background-image: url('../images/test7.png');
@@ -197,7 +197,7 @@ h2{
 
 
 .project-container {
-	 border-radius: 20px;
+	 border-radius: 10px;
 	 display:block;
 	 overflow:hidden;
 	 height: 100%;
