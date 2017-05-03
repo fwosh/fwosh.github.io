@@ -297,8 +297,19 @@ textarea {
 	resize:none;
 }
 
-.twitter-icon{
-	width:50px;
-	height:50px;
-	fill:white;
-}
+
+%social-icon-hover
+  border-radius: 100%
+  color: $background // IE8
+  fill: $background
+  transform: scale(1.25)
+  transition: background-color .5s, transform .5s ease-out
+
+// Neat color trick, <3 Sass
+@for $i from 1 through 30
+  .icon-#{$i}
+    color: hsl($i * 12, 70, 50) // IE8
+    fill: hsl($i * 12, 70, 50)
+    &:hover
+      background: hsl($i * 12, 70, 50)
+

@@ -1,4 +1,5 @@
 <?php
+
 if(isset($_POST['email'])) {
 	
 	// CHANGE THE TWO LINES BELOW
@@ -24,7 +25,6 @@ if(isset($_POST['email'])) {
 	
 	$name = $_POST['name']; // required
 	$email_from = $_POST['email']; // required
-//	$telephone = $_POST['telephone']; // not required
 	$comments = $_POST['comments']; // required
 	
 	$error_message = "";
@@ -50,10 +50,8 @@ if(isset($_POST['email'])) {
 	  return str_replace($bad,"",$string);
 	}
 	
-	$email_message .= "First Name: ".clean_string($first_name)."\n";
-	$email_message .= "Last Name: ".clean_string($last_name)."\n";
+	$email_message .= "First Name: ".clean_string($name)."\n";
 	$email_message .= "Email: ".clean_string($email_from)."\n";
-	$email_message .= "Telephone: ".clean_string($telephone)."\n";
 	$email_message .= "Comments: ".clean_string($comments)."\n";
 	
 	
@@ -67,8 +65,3 @@ $headers = 'From: '.$email_from."\r\n".
 <!-- place your own success html below -->
 
 Thank you for contacting us. We will be in touch with you very soon.
-
-<?php
-}
-die();
-?>
