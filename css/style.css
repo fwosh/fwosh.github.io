@@ -23,7 +23,14 @@ a:hover{
 	text-decoration: none;
 }
 
-.keyart, .keyart_layer {
+svg{
+	display: inline-block;
+	
+}	
+
+/*parallax css*/
+
+.keyart, .keyart-layer {
 	height: 1000px;
 }
 
@@ -47,58 +54,52 @@ a:hover{
 	z-index: 10;
 }
 
-.keyart_layer {
+.keyart-layer {
 	background-position: bottom center;
 	background-size: auto;
 	background-repeat: repeat-x;
 	width: 100%;
 	position: absolute;
 }
-.keyart_layer.parallax {
+
+.keyart-layer.parallax {
 	position: fixed;
 }
-		#keyart-0 {
-		background-image: url('../images/test9.png');
-		background-color: #ffaf1b;
-	}
-	#keyart-1 {
-		background-image: url('../images/test8.png');
-	}
-	#keyart-2 {
-		background-image: url('../images/test7.png');
-	}
-	#keyart-3 {
-		background-image: url('../images/test6.png');
-	}
-	#keyart-4 {
-		background-image: url('../images/test5.png');
-	}
-	#keyart-5 {
-		background-image: url('../images/test4.png');
-	}
-	#keyart-6 {
-		background-image: url('../images/test3.png');
-	}
-	#keyart-7 {
-		background-image: url('../images/test2.png');
-	}
-	#keyart-8 {
-		background-image: url('../images/test1.png');
-	}
-	#keyart-scrim {
-		background-color: #ffaf00;
-		opacity: 0;
-	}
 
- 
-/********************/
-/********************/
-/* ENABLES PARALLAX */
-/********************/
-/********************/
+#keyart-0 {
+	background-image: url('../images/test9.png');
+	background-color: #ffaf1b;
+}
+#keyart-1 {
+	background-image: url('../images/test8.png');
+}
+#keyart-2 {
+	background-image: url('../images/test7.png');
+}
+#keyart-3 {
+	background-image: url('../images/test6.png');
+}
+#keyart-4 {
+	background-image: url('../images/test5.png');
+}
+#keyart-5 {
+	background-image: url('../images/test4.png');
+}
+#keyart-6 {
+	background-image: url('../images/test3.png');
+}
+#keyart-7 {
+	background-image: url('../images/test2.png');
+}
+#keyart-8 {
+	background-image: url('../images/test1.png');
+}
+#keyart-scrim {
+	background-color: #ffaf00;
+	opacity: 0;
+}
 
-@media (min-width: 601px) {
-
+@media (min-width: 600px) {
 	#nonparallax {
 		display: none;
 	}
@@ -108,16 +109,14 @@ a:hover{
 
 }
 
-/* PARALLAX */
+.keyart, .keyart-layer {
+	height: 650px;
+}
 
-.keyart, .keyart_layer {
-		height: 650px;
-	}
-
-.keyart_layer {
-		position: absolute;
-		background-size: auto 600px;
-	}
+.keyart-layer {
+	position: absolute;
+	background-size: auto 600px;
+}
 
 .toprule {
 	background-color: #a34300;
@@ -163,49 +162,51 @@ a:hover{
 
 
 .overlay {
-  height: 100%;
-  width: 100%;
-  float: left;
-   position: absolute;
-   left: 0px;
-   top: 0px;
-   z-index: 1000;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+	height: 100%;
+	width: 100%;
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
 
 
 }
 
 .project:hover .overlay {
-  opacity: 0.9;
+	opacity: 0.9;
 }
 
 .row{
-	margin-bottom:20px;
-	margin-top:20px;
 }
 
 .project-text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+	white-space: nowrap; 
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 
+.project {
+	margin-top:20px;
+	
+}
 
 .project-container {
-	 border-radius: 10px;
-	 display:block;
-	 overflow:hidden;
-	 height: 100%;
-  	 width: 100%;
-  	 position:relative;
+	border-radius: 10px;
+	display:block;
+	overflow:hidden;
+	height: 100%;
+	width: 100%;
+	position:relative;
 }
 
 /*navbar CSS*/
@@ -215,8 +216,8 @@ a:hover{
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #210002;
-    background-color: #210002;
+	border-color: #210002;
+	background-color: #210002;
 }
 
 .container {
@@ -231,47 +232,47 @@ a:hover{
 }
 
 .navbar-default .navbar-brand {
-    color: #777;
+	color: #777;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #5E5E5E;
+	color: #5E5E5E;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+	color: #777;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #333;
+	color: #333;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
-    background-color: #E7E7E7;
+	color: #555;
+	background-color: #E7E7E7;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
-    background-color: #D5D5D5;
+	color: #555;
+	background-color: #D5D5D5;
 }
 
 .navbar-default .navbar-nav > .dropdown > a .caret {
-    border-top-color: #777;
-    border-bottom-color: #777;
+	border-top-color: #777;
+	border-bottom-color: #777;
 }
 .navbar-default .navbar-nav > .dropdown > a:hover .caret,
 .navbar-default .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #333;
-    border-bottom-color: #333;
+	border-top-color: #333;
+	border-bottom-color: #333;
 }
 .navbar-default .navbar-nav > .open > a .caret,
 .navbar-default .navbar-nav > .open > a:hover .caret,
 .navbar-default .navbar-nav > .open > a:focus .caret {
-    border-top-color: #555;
-    border-bottom-color: #555;
+	border-top-color: #555;
+	border-bottom-color: #555;
 }
 
 .button {
@@ -289,30 +290,77 @@ a:hover{
 .grayscale {
 
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
-/*form */
+/*form CSS*/
 
 h1, .title{
 	text-align: center;
 }
+
 #contact-form{
 	color:black;
 }
 
 textarea {
 	resize:none;
-	width:70%;
+	width:100%;
 	margin-bottom: 10px;
+	box-sizing: border-box;
+	border-radius: 0;
+	border: 1px solid #000;
+	transition: border 0.5s;
+	padding: 10px 10px 10px 50px;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 17.6px;
+	line-height: 1.1rem;
 }
+
+.form-label{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 45px;
+	height: 45px;
+	margin: 0;
+	background-color: #000;
+	transition: background-color 0.5s;
+
+}
+
+.form-label svg {
+	transform-origin: left top;
+	transform: scale(0.75) translateX(-50%) translateY(-50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
 
 .form-input{
 	margin-bottom: 10px;
-	width:70%;
+	width:100%;
+	border: 1px solid #000;
+	transition: border 0.5s;
+	padding: 10px 10px 10px 50px;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 17.6px;
+	line-height: 1.1rem;
 }
 
-
+.form-line{
+	position: relative;
+	max-height: 150px;
+	margin: 0 0 20px;
+	margin: 0 0 1.25rem;
+}
+.form-icon{
+	margin: 3px;
+}
 /*social */
 
 .social-icon{
