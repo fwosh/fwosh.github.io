@@ -171,9 +171,7 @@ svg{
 	z-index: 1000;
 	opacity: 0;
 	transition: .5s ease;
-	background-color: #008CBA;
-
-
+	background-color: #f74bdf;
 }
 
 .project:hover .overlay {
@@ -323,8 +321,8 @@ textarea {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 45px;
-	height: 45px;
+	width: 40px;
+	height: 32px;
 	margin: 0;
 	background-color: #000;
 	transition: background-color 0.5s;
