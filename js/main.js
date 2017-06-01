@@ -26,13 +26,6 @@ function dispelParallax() {
 	$("#parallax").css('display','none');
 }
 
-function castSmoothScroll() {
-	$.srSmoothscroll({
-		step: 80,
-		speed: 300,
-		ease: 'linear'
-	});
-}
 
 $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
@@ -53,10 +46,7 @@ function startSite() {
 	else if (platform.indexOf('win32') != -1 || platform.indexOf('linux') != -1)
 	{
 		castParallax();					
-		if ($.browser.webkit)
-		{
-			castSmoothScroll();
-		}
+	
 	}
 	
 	else
