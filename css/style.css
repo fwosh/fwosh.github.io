@@ -1,17 +1,18 @@
 html {
     background-color: #210002;
 }
+* { box-sizing: border-box; }
 
 body {
     position: relative;
     font-family: 'Palanquin Dark', sans-serif;
-    font-size: 18px;
+    font-size: 2em;
     background-color: #424242;
 }
 
 h1 {
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 2em;
     padding-top: 15px;
 }
 
@@ -181,9 +182,6 @@ svg {
     background-color: #f74bdf;
 }
 
-.project:hover .overlay {
-    opacity: 0.9;
-}
 
 .row {}
 
@@ -199,9 +197,7 @@ svg {
     -ms-transform: translate(-50%, -50%);
 }
 
-.project {
-    margin-top: 20px;
-}
+
 
 .project-container {
     border-radius: 10px;
@@ -293,15 +289,33 @@ svg {
 }
 
 .button {
-    background-color: white;
-    padding: 5px;
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
+   display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
 }
 
-.button a {
-    text-decoration: none;
+
+.button:active,
+.button.is-checked {
+  background-color: #28F;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
 }
 
 .grayscale {
@@ -404,12 +418,3 @@ textarea {
     /* IE6-9 */
 }
 
-
-/*social */
-
-.social-icon {
-    width: 40px;
-    height: 40px;
-    fill: white;
-    display: inline-block;
-}
