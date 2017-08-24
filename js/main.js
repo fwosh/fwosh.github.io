@@ -57,3 +57,25 @@ function startSite() {
 }
 
 document.body.onload = startSite();
+
+
+$( document ).ready(function() {
+  /* activate jquery isotope */
+  var $container = $('#posts').isotope({
+    itemSelector : '.project',
+    isFitWidth: true
+  });
+
+  
+  $container.isotope({ filter: '*' });
+
+    // filter items on button click
+  $('#filters').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $container.isotope({ filter: filterValue });
+  });
+});
+
+
+
+//isotope filtering
