@@ -19,12 +19,23 @@ h2 {
     margin-top: 0px;
 }
 
+a:visited {
+    text-decoration: none;
+    color:white;
+}
+
+
 a:hover {
     text-decoration: none;
     color: royalblue;
 }
 
-a:visited {
+
+a:active{
+    text-decoration: none;
+}
+
+a:link{
     text-decoration: none;
 }
 
@@ -176,7 +187,9 @@ svg {
 }
 
 .btn-outline {
-    border: 2px solid white;
+    border: 2px white;
+    border-bottom-width:3px;
+    border-style: solid solid double solid;
     text-transform: uppercase;
     color: white;
     padding: 10px;
@@ -186,7 +199,9 @@ svg {
 }
 
 .btn-outline:hover{
-    border: 2px solid royalblue;
+     border: 2px royalblue;
+    border-bottom-width:3px;
+    border-style: solid solid double solid;
 }
 
 .brand {
@@ -250,7 +265,8 @@ svg {
 }
 
 .navbar-default {
-    border-bottom: 3px solid #fff;
+    /*border-bottom: 1px solid #fff;*/
+    border-bottom: none;
 }
 
 .container {
@@ -265,7 +281,7 @@ svg {
 }
 
 .navbar-default .navbar-brand {
-    color: #777;
+    color: #fff;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -274,7 +290,7 @@ svg {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+    color: #fff;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
