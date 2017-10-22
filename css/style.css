@@ -1,5 +1,5 @@
 html {
-    background-color: #210002;
+    background-color: #12100c;
 }
 
 body {
@@ -84,40 +84,40 @@ svg {
 }
 
 #keyart-0 {
-    background-image: url('../images/test9.png');
+    background-image: url('../images/newtest9.png');
     background-color: #ffaf1b;
 }
 
 #keyart-1 {
-    background-image: url('../images/test8.png');
+    background-image: url('../images/newtest8.png');
 }
 
 #keyart-2 {
-    background-image: url('../images/test7.png');
+    background-image: url('../images/newtest7.png');
 }
 
 #keyart-3 {
-    background-image: url('../images/test6.png');
+    background-image: url('../images/newtest6.png');
 }
 
 #keyart-4 {
-    background-image: url('../images/test5.png');
+    background-image: url('../images/newtest5.png');
 }
 
 #keyart-5 {
-    background-image: url('../images/test4.png');
+    background-image: url('../images/newtest4.png');
 }
 
 #keyart-6 {
-    background-image: url('../images/test3.png');
+    background-image: url('../images/newtest3.png');
 }
 
 #keyart-7 {
-    background-image: url('../images/test2.png');
+    background-image: url('../images/newtest2.png');
 }
 
 #keyart-8 {
-    background-image: url('../images/test1.png');
+    background-image: url('../images/newtest1.png');
 }
 
 #keyart-scrim {
@@ -152,7 +152,7 @@ svg {
 }
 
 #maincontainer {
-    background-color: #210002;
+    background-color: #12100c;
     position: relative;
     z-index: 98;
 }
@@ -165,7 +165,7 @@ svg {
     margin-right: auto;
     z-index: 99;
     position: relative;
-    background-color: #210002;
+    background-color: #12100c;
 }
 
 .section {
@@ -255,13 +255,13 @@ svg {
 .navbar,
 .navbar-fixed-top,
 .navbar-default {
-    background-color: #210002;
+    background-color: #12100c;
 }
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #210002;
-    background-color: #210002;
+    border-color: #12100c;
+    background-color: #12100c;
 }
 
 .navbar-default {
@@ -270,7 +270,7 @@ svg {
 }
 
 .container {
-    background-color: #210002;
+    background-color: #12100c;
     text-align: center;
     width: 100%;
 }
