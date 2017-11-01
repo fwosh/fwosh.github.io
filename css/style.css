@@ -1,5 +1,5 @@
 html {
-    background-color: #12100c;
+    background-color: #424242;
 }
 
 body {
@@ -17,17 +17,26 @@ h1 {
 
 h2 {
     margin-top: 0px;
+    font-size: 2em;
+    margin-bottom:-10px;
 }
 
 a:visited {
     text-decoration: none;
     color:white;
+    outline: none;
+    border:0;
 }
 
 
 a:hover {
     text-decoration: none;
-    color: royalblue;
+    color: #424242;
+}
+
+a:focus {
+    outline: 5px #424242;
+    outline-offset: -1px;
 }
 
 
@@ -37,6 +46,10 @@ a:active{
 
 a:link{
     text-decoration: none;
+}
+
+a img {
+    border: 0;
 }
 
 svg {
@@ -84,40 +97,40 @@ svg {
 }
 
 #keyart-0 {
-    background-image: url('../images/newtest9.png');
-    background-color: #ffaf1b;
+    background-image: url('../images/layer9.png');
+    background-color: #424242;
 }
 
 #keyart-1 {
-    background-image: url('../images/newtest8.png');
+    background-image: url('../images/layer8.png');
 }
 
 #keyart-2 {
-    background-image: url('../images/newtest7.png');
+    background-image: url('../images/layer7.png');
 }
 
 #keyart-3 {
-    background-image: url('../images/newtest6.png');
+    background-image: url('../images/layer6.png');
 }
 
 #keyart-4 {
-    background-image: url('../images/newtest5.png');
+    background-image: url('../images/layer5.png');
 }
 
 #keyart-5 {
-    background-image: url('../images/newtest4.png');
+    background-image: url('../images/layer4.png');
 }
 
 #keyart-6 {
-    background-image: url('../images/newtest3.png');
+    background-image: url('../images/layer3.png');
 }
 
 #keyart-7 {
-    background-image: url('../images/newtest2.png');
+    background-image: url('../images/layer2.png');
 }
 
 #keyart-8 {
-    background-image: url('../images/newtest1.png');
+    background-image: url('../images/layer1.png');
 }
 
 #keyart-scrim {
@@ -132,6 +145,18 @@ svg {
     #parallax {
         display: block;
     }
+}
+
+.wip-text{
+    position:absolute;
+    z-index: 100;
+    text-align:center;
+    top: 40%;
+    font-size: 32px;
+    color: white;
+    width: 100%;
+    text-shadow: 2px 2px #424242;
+
 }
 
 .keyart,
@@ -159,8 +184,9 @@ svg {
 
 #main {
     max-width: 1000px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
     margin-left: auto;
     margin-right: auto;
     z-index: 99;
@@ -169,16 +195,20 @@ svg {
 }
 
 .section {
-    margin: 30px auto 60px;
+    margin: 30px auto 0px;
     margin-top: 0;
     text-align: justify;
     color: white;
 }
 
-#projects, #about, #resume {
+#projects, #about, #resume{
     margin: 0 auto;
     text-align:center;
     margin-bottom: 3em;
+}
+
+#contact {
+    text-align:center;
 }
 
 
@@ -199,9 +229,10 @@ svg {
 }
 
 .btn-outline:hover{
-     border: 2px royalblue;
+    border: 2px #424242;
     border-bottom-width:3px;
     border-style: solid solid double solid;
+    color: #424242;
 }
 
 .brand {
@@ -218,7 +249,7 @@ svg {
     z-index: 1000;
     opacity: 0;
     transition: .5s ease;
-    background-color: royalblue;
+    background-color: #424242;
 }
 
 .project:hover .overlay {
@@ -248,6 +279,15 @@ svg {
     height: 100%;
     width: 100%;
     position: relative;
+}
+
+.wip {
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    opacity: 0.3;
 }
 
 /*navbar CSS*/
@@ -282,7 +322,10 @@ svg {
 
 .navbar-default .navbar-brand {
     color: #fff;
+    font-size: 32px;
 }
+
+
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -442,6 +485,12 @@ textarea {
     /* IE6-9 */
 }
 
+footer{
+ margin: 30px auto 0px;
+    margin-top: 0;
+    text-align: justify;
+    color: white;;
+}
 
 /*social */
 
